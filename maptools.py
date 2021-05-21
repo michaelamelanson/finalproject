@@ -25,8 +25,8 @@ def make_map(projection=ccrs.PlateCarree()):
     '''
     ax = plt.axes(projection=projection)
     gl = ax.gridlines(draw_labels=True)
-    gl.xlabels_top = False
-    gl.ylabels_right = False
+    gl.top_labels = False
+    gl.right_labels = False
     gl.xformatter = LONGITUDE_FORMATTER
     gl.yformatter = LATITUDE_FORMATTER
     return ax
